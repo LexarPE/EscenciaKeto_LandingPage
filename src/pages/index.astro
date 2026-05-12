@@ -1,0 +1,453 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../styles/global.css";
+import { Image } from "astro:assets";
+import EcoIcon from "../assets/eco.svg";
+---
+
+<Layout>
+  <!-- TopNavBar -->
+  <header
+    class="bg-background/90 dark:bg-background/90 backdrop-blur-md docked full-width top-0 sticky z-50"
+  >
+    <nav
+      class="max-w-container-max mx-auto px-gutter flex justify-between items-center h-20"
+    >
+      <span
+        class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed tracking-tight"
+        >Esencia Keto</span
+      >
+
+      <a
+        href="https://wa.me/51953357678?text=Estoy%20interesado%20en%20obtener%20el%20libro%20digital%20de%20postres%20keto"
+        target="_blank"
+        class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-label-sm text-label-sm transition-all active:opacity-80 cursor-pointer"
+      >
+        Obtener el Libro
+      </a>
+    </nav>
+  </header>
+  <main>
+    <!-- Hero Section -->
+    <section
+      class="max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap flex flex-col md:flex-row items-center gap-16 overflow-hidden"
+    >
+      <div class="flex-1 space-y-8 z-10">
+        <h1
+          class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary"
+        >
+          Postres Keto: Solo 3 ingredientes, cero culpas.
+        </h1>
+        <p class="font-body-lg text-body-lg text-secondary max-w-lg">
+          Descubre la simplicidad de la repostería low-carb. Recetas
+          minimalistas diseñadas para satisfacer tus antojos sin comprometer tu
+          estilo de vida saludable.
+        </p>
+        <div class="flex gap-4 pt-4">
+          <a
+            href="https://wa.me/51953357678?text=Estoy%20interesado%20en%20obtener%20el%20libro%20digital%20de%20postres%20keto"
+            target="_blank"
+            class="bg-primary text-on-primary px-8 py-4 rounded-lg font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary-container transition-colors shadow-lg cursor-pointer"
+          >
+            Comprar ahora
+          </a>
+        </div>
+      </div>
+      <div class="flex-1 w-full md:w-auto relative">
+        <div
+          class="absolute -top-12 -left-12 w-64 h-64 bg-primary-fixed/30 rounded-full blur-3xl -z-10"
+        >
+        </div>
+        <Image
+          alt="Keto chocolate dessert"
+          width={800}
+          height={1000}
+          class="w-full aspect-4/5 object-cover rounded-xl soft-shadow"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCTC4TtwpeoBxmClLR_94mTlDMgn9pXww0VnLiXC0iAn1lDf7eJOatLUpXACkuurBRIwTsHryRUvtZp7QG3-SbQ7kIK1xORD6AQ9qLT2MSS3f6sQ5FaoHU7pX9Yjb4Qfcscx0jPx3X296GNR8df8Ov3_ZDNaNaRrNliZYSP0ZuqksfWOgF79IWLZxGgV8Rl-lhF4UzJcxvf5C6u2XBABlppe5T0LUsKcO42sY1tikWN37pHUuCdJ707n7G7nrEurp6XejTv8LATU5Z"
+          loading="eager"
+        />
+      </div>
+    </section>
+    <!-- Preview Grid -->
+    <section
+      class="bg-surface-container-low py-section-gap-mobile md:py-section-gap"
+    >
+      <div class="max-w-container-max mx-auto px-gutter">
+        <div
+          class="mb-16 flex flex-col md:flex-row justify-between items-end gap-4"
+        >
+          <div>
+            <span
+              class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary"
+              >SABORES ESENCIALES</span
+            >
+            <h2 class="font-display-lg text-headline-md text-on-surface mt-2">
+              Nuestra Selección Dulce
+            </h2>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+          <!-- Card 1 -->
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-xl mb-6">
+              <Image
+                alt="Mousse de Chocolate y Palta"
+                width={600}
+                height={800}
+                class="w-full aspect-3/4 object-cover transition-transform duration-700 group-hover:scale-105"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd8VB0FHnaC0YKP_1OdiMO8AuW23wa_-od981aRaMIa5-MJYd38nhwNC2Thy_3nZ8luHnQ-zqc_nActakqH3FP22ryZWgIvTP-zBSYaU0UfWMbvuce-45tnZjVGURApP6lA3pUN5oRwF5yKW_hBbgyKsikQvHRZTOgFRdcJcNee6A9o2XGFGj4oAqR3aBJAZYhLbmT6IPPRZctvsBeQyStzQmsYefQg9TD4Pqa2HEGRHhZvefuMP0IQo8-77iyVQCYKHdMnRRvTBQV"
+              />
+            </div>
+            <div class="space-y-2">
+              <div class="flex gap-2">
+                <span
+                  class="px-3 py-1 bg-tertiary/10 text-tertiary rounded-full font-label-sm text-[10px] uppercase tracking-widest"
+                  >Cremoso</span
+                >
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">
+                Mousse de Chocolate y Palta
+              </h3>
+              <p class="font-body-md text-body-md text-secondary">
+                La combinación perfecta de grasas saludables y cacao puro para
+                una textura irresistible.
+              </p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="group cursor-pointer mt-8 md:mt-16">
+            <div class="relative overflow-hidden rounded-xl mb-6">
+              <Image
+                alt="Bombones de Coco"
+                width={600}
+                height={800}
+                class="w-full aspect-3/4 object-cover transition-transform duration-700 group-hover:scale-105"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvYHzlrHTino9-aVOm522LZhPHxhY464gJlOy4EIhB3e3WXDaeu7UnHaRnmRwGHv9Gdm41vzDKCUza66y-cSOmotkI7WyGzmCTFiRDit8uir-t8hPRgt5EsSKcAMeMK3AbS97WZHiAIFSUUcJXv519q4ruscUR5SIQLgy6cxHwqu6MqgnOkp-Znj-5MhJ63xsWvw7vvyhwif1vRqymx_PzpZO-74GPc_ZQZbAu78kaQfHoBd76-3XGtqxseAGvi43dZOzhWhRXm1uz"
+              />
+            </div>
+            <div class="space-y-2">
+              <div class="flex gap-2">
+                <span
+                  class="px-3 py-1 bg-tertiary/10 text-tertiary rounded-full font-label-sm text-[10px] uppercase tracking-widest"
+                  >Energético</span
+                >
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">
+                Bombones de Coco
+              </h3>
+              <p class="font-body-md text-body-md text-secondary">
+                Pequeños bocados de paraíso tropical, sin azúcares añadidos y
+                listos en minutos.
+              </p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="group cursor-pointer">
+            <div class="relative overflow-hidden rounded-xl mb-6">
+              <Image
+                alt="Galletas de Almendra"
+                width={600}
+                height={800}
+                class="w-full aspect-3/4 object-cover transition-transform duration-700 group-hover:scale-105"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBckkY5hPMFc2mRXH2uon_4rIxTzXVQvlaSVwaXF9BzBchI8FtbpRngjn_uXNnSE_AMqyuniZ7RsWT1clKJZn3kNdM__RyCddCxe0t6M-cL8KWrjib8vji3JOGdkgt2HD1XMlcwZWhZLuTXW8GJJdJbftP5xg1WAEjLY9be5EoucWsuGRK9cB5Cyp5HbD8_mdmqsiER9uVsxuJ5NP4zUpNdjnP1LJiUraV_rpEMGhnRe1ID7If-brr619UDkQOG4WmFlyLCAp3hKJBp"
+              />
+            </div>
+            <div class="space-y-2">
+              <div class="flex gap-2">
+                <span
+                  class="px-3 py-1 bg-tertiary/10 text-tertiary rounded-full font-label-sm text-[10px] uppercase tracking-widest"
+                  >Horneado</span
+                >
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface">
+                Galletas de Almendra
+              </h3>
+              <p class="font-body-md text-body-md text-secondary">
+                Crujientes por fuera y tiernas por dentro, el clásico snack keto
+                reinventado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section
+      class="max-w-container-max mx-auto px-gutter py-section-gap flex flex-col md:flex-row gap-20 items-center"
+    >
+      <div class="flex-1 order-2 md:order-1">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="space-y-4">
+            <div class="h-64 bg-surface-container rounded-xl overflow-hidden">
+              <Image
+                alt="Keto ingredients"
+                width={800}
+                height={600}
+                class="w-full h-full object-cover grayscale opacity-60"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmRqeTMBQSPByaB2LBHrIrK9clKBu1YrF5m4yY4ib7DXl_0ST-QU6y3qKDHGj6DGMWRRaaePya4r5cX-6ARw2fQC87DsrXaWc1T0bNrf-iPo5QznBUubPS1trENhEgJ-sUgfE0TOdzk4zqBQnmaTr5_uNjlTFszxH-qL5c82Z50jAoxfVpSvjDXugQJafxprlBbXqa6EXIbd4LK1u0Eo4naUdaI20h2uv3zkS1slU3-xswrTR49cTdoAEzmg2kk5NfKww8b6S_qn4x"
+              />
+            </div>
+            <div
+              class="h-48 bg-primary rounded-xl flex items-center justify-center text-on-primary"
+            >
+              <EcoIcon class="w-12 h-12 text-on-primary" aria-hidden="true" />
+            </div>
+          </div>
+          <div class="pt-12 space-y-4">
+            <div class="h-48 bg-secondary-container rounded-xl overflow-hidden">
+              <Image
+                alt="Healthy fats"
+                width={800}
+                height={480}
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFHPz9X2Nf1c01cjJ6L3xBLfaYw7qEjMDZW9gdXLFnY2n6Nffpnd-plAKC-RcqMaYqXSQLR6QvyGA39xBy50rE-pEzKBlt9PsCr3yNu0oOgnXmkpfh3_z-uB8LY70k9NIQuXuIv_ZMGJsmKGXAsPf18FYC7ibjuKuhdvP_IjEAGc-xdgM_KHRZot00lsGVxsWwE4AFBhx7jpVCktKyjmMBD-eIYZu3pROMuQkvCNbWI3a9ZCrSzDdATp9Y06r72Nl61SnFOSKxpvzm"
+              />
+            </div>
+            <div
+              class="h-64 bg-surface-container-high rounded-xl overflow-hidden"
+            >
+              <Image
+                alt="Berries"
+                width={800}
+                height={640}
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr2WTYdk1hd0rZRgP688mXtOvvVJ3a4fMdaaJo6ys2ITp0opdaI7k-JN9AhMqG2yQu_4r6R2rhGsZHHBG0BpreseVcmQeQivxaz-wGmoJzfCanV1nHjAilW5ZLetzxc-UQoQ4ID9cy5nqskgMBtJevPS5fEeQGu5H_KEhBfywZv4Enlxkh0_t-7cJSvj3n9q5P_VHPiZV3tcV58Ix8vZqoL5JpZIZnXaqAGnoRhiAmQWNJ0uRJ-cxgz0vD_ozRUS4aNPRe7jueDnyA"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-1 order-1 md:order-2 space-y-6">
+        <span
+          class="font-label-sm text-label-sm uppercase tracking-widest text-primary"
+          >LA FILOSOFÍA</span
+        >
+        <h2
+          class="font-display-lg text-headline-md md:text-display-lg text-on-surface leading-tight"
+        >
+          Simplicidad que nutre y deleita.
+        </h2>
+        <p class="font-body-lg text-body-lg text-secondary">
+          Creemos que comer sano no debería ser complicado ni aburrido. Esencia
+          Keto nació de la necesidad de simplificar la repostería cetogénica,
+          eliminando listas infinitas de ingredientes difíciles de encontrar.
+        </p>
+        <p class="font-body-md text-body-md text-secondary">
+          Cada receta en este libro utiliza solo tres ingredientes base,
+          seleccionados por su densidad nutricional y sabor excepcional.
+          Disfruta de la paz mental que viene con saber exactamente qué hay en
+          tu postre.
+        </p>
+        <div class="pt-4">
+          <div class="flex items-center gap-4 text-on-surface">
+            <span
+              class="material-symbols-outlined text-primary"
+              data-weight="fill">verified</span
+            >
+            <span class="font-body-md font-semibold"
+              >100% Libres de Azúcar Añadido</span
+            >
+          </div>
+          <div class="flex items-center gap-4 mt-3 text-on-surface">
+            <span
+              class="material-symbols-outlined text-primary"
+              data-weight="fill">verified</span
+            >
+            <span class="font-body-md font-semibold"
+              >Máximo 3 Ingredientes Principales</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Social Proof -->
+    <section
+      class="bg-surface-container py-section-gap-mobile md:py-section-gap"
+    >
+      <div class="max-w-container-max mx-auto px-gutter text-center mb-16">
+        <h2 class="font-display-lg text-headline-md text-on-surface">
+          Testimonios
+        </h2>
+        <p class="font-body-md text-secondary mt-2">
+          Nuestra comunidad ya está disfrutando del lado dulce de la vida keto.
+        </p>
+      </div>
+      <div
+        class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-3 gap-8"
+      >
+        <div class="bg-background p-8 rounded-xl soft-shadow space-y-4">
+          <div class="flex text-tertiary">
+            <span
+              class="material-symbols-outlined"
+              style='font-variation-settings: "FILL" 1;'>star</span
+            >
+            <span
+              class="material-symbols-outlined"
+              style='font-variation-settings: "FILL" 1;'>star</span
+            >
+            <span
+              class="material-symbols-outlined"
+              style='font-variation-settings: "FILL" 1;'>star</span
+            >
+            <span
+              class="material-symbols-outlined"
+              style='font-variation-settings: "FILL" 1;'>star</span
+            >
+            <span
+              class="material-symbols-outlined"
+              style='font-variation-settings: "FILL" 1;'>star</span
+            >
+          </div>
+          <p class="font-body-md italic text-on-surface">
+            "Nunca pensé que con solo 3 ingredientes podría hacer algo tan rico.
+            El mousse de palta cambió mi vida por completo."
+          </p>
+          <div class="flex items-center gap-3 pt-4">
+            <div class="w-10 h-10 bg-secondary-fixed rounded-full"></div>
+            <div>
+              <p class="font-label-sm text-label-sm text-on-surface">
+                Lucía Méndez
+              </p>
+              <p class="font-label-sm text-[10px] text-secondary">
+                Entusiasta Fitness
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-background p-8 rounded-xl soft-shadow space-y-4">
+          <div class="flex text-tertiary">
+            <span
+              class="material-symbols-outlined"
+              style='font-variation-settings: "FILL" 1;'>star</span
+            >
+            <span
+              class="material-symbols-outlined"
+              style='font-variation-settings: "FILL" 1;'>star</span
+            >
+            <span
+              class="material-symbols-outlined"
+              style='font-variation-settings: "FILL" 1;'>star</span
+            >
+            <span
+              class="material-symbols-outlined"
+              style='font-variation-settings: "FILL" 1;'>star</span
+            >
+            <span
+              class="material-symbols-outlined"
+              style='font-variation-settings: "FILL" 1;'>star</span
+            >
+          </div>
+          <p class="font-body-md italic text-on-surface">
+            "Ideal para cuando tienes poco tiempo pero quieres algo dulce. Las
+            instrucciones son claras y las fotos son preciosas."
+          </p>
+          <div class="flex items-center gap-3 pt-4">
+            <div class="w-10 h-10 bg-secondary-fixed rounded-full"></div>
+            <div>
+              <p class="font-label-sm text-label-sm text-on-surface">
+                Javier Soler
+              </p>
+              <p class="font-label-sm text-[10px] text-secondary">
+                Padre de familia
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-background p-8 rounded-xl soft-shadow space-y-4">
+          <div class="flex text-tertiary">
+            <span
+              class="material-symbols-outlined"
+              style='font-variation-settings: "FILL" 1;'>star</span
+            >
+            <span
+              class="material-symbols-outlined"
+              style='font-variation-settings: "FILL" 1;'>star</span
+            >
+            <span
+              class="material-symbols-outlined"
+              style='font-variation-settings: "FILL" 1;'>star</span
+            >
+            <span
+              class="material-symbols-outlined"
+              style='font-variation-settings: "FILL" 1;'>star</span
+            >
+            <span
+              class="material-symbols-outlined"
+              style='font-variation-settings: "FILL" 1;'>star</span
+            >
+          </div>
+          <p class="font-body-md italic text-on-surface">
+            "Como nutricionista, valoro la simplicidad y el enfoque en
+            ingredientes reales. Un recurso excelente para mis clientes."
+          </p>
+          <div class="flex items-center gap-3 pt-4">
+            <div class="w-10 h-10 bg-secondary-fixed rounded-full"></div>
+            <div>
+              <p class="font-label-sm text-label-sm text-on-surface">
+                Dra. Marta Ruiz
+              </p>
+              <p class="font-label-sm text-[10px] text-secondary">
+                Nutricionista
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Footer Section -->
+    <section class="max-w-container-max mx-auto px-gutter py-section-gap">
+      <div
+        class="bg-primary-container rounded-2rem p-8 md:p-20 text-center relative overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/natural-paper.png')] opacity-20 pointer-events-none"
+        >
+        </div>
+        <div class="relative z-10 max-w-2xl mx-auto space-y-8">
+          <h2
+            class="font-display-lg text-headline-md md:text-display-lg text-on-primary-container"
+          >
+            Tu viaje dulce comienza hoy.
+          </h2>
+          <p class="font-body-lg text-on-primary-container/80">
+            Descarga el libro digital y transforma tus postres.
+          </p>
+          <div class="flex flex-col md:flex-row gap-4 justify-center pt-4">
+            <a
+              href="https://wa.me/51953357678?text=Estoy%20interesado%20en%20obtener%20el%20libro%20digital%20de%20postres%20keto"
+              target="_blank"
+              class="bg-on-primary-container text-primary px-10 py-5 rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:bg-white transition-all transform hover:-translate-y-1"
+            >
+              OBTENER EL LIBRO DIGITAL
+            </a>
+          </div>
+          <p
+            class="font-label-sm text-on-primary-container/60 text-[10px] uppercase tracking-widest"
+          >
+            Compra única. Acceso de por vida.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer
+    class="bg-surface-container-low dark:bg-surface-container-lowest full-width"
+  >
+    <div
+      class="max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-16 flex flex-col md:flex-row justify-between items-center gap-8"
+    >
+      <div class="text-center md:text-left">
+        <span
+          class="font-display-lg text-headline-sm text-primary dark:text-primary-fixed"
+          >Esencia Keto</span
+        >
+        <p
+          class="font-label-sm text-label-sm uppercase tracking-widest text-secondary mt-2"
+        >
+          © 2026 Esencia Keto. Postres reales para vidas reales.
+        </p>
+      </div>
+    </div>
+  </footer>
+</Layout>
